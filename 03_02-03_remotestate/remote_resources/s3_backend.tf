@@ -6,7 +6,7 @@ variable "aws_access_key" {}
 variable "aws_secret_key" {}
 
 variable "bucket_name" {
-  default = "red30-tfstate"
+  default = "red40-tfstate"
 }
 
 # //////////////////////////////
@@ -22,7 +22,7 @@ provider "aws" {
 # TERRAFORM USER
 # //////////////////////////////
 data "aws_iam_user" "terraform" {
-  user_name = "terraform"
+  user_name = "terraform-ribs"
 }
 
 # //////////////////////////////
